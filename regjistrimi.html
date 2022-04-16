@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en-AL">
+ <head>
+        <title>Equal</title>
+        <link href="/logo3.png" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="height=device-height, initial-scale=1">
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; connect-src http://www.example.com">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+        </style>
+ </head>
+
+<body>
+  <div class="background">
+  <form id="form" data-ajax="false">
+    <center>
+      <br>
+         <img src="image.jpg" alt="Logo">
+         <div class="primary-color" style="width:90%; font-size:16px;">Video, audio dhe me shume per personat me aftesi te kufizuar</div>
+           <br>
+           <br>
+             <div class="secondary-color" style="font-size:34px;"><b>REGJISTRIMI</b></div>
+             <br>
+             <br>
+                <div class="">
+                  <input class="mbiemri" placeholder="Emri" type="text" name="emri" autocomplete="off" id="user">
+                </div>
+                  <br>
+                <div class="">
+                  <input class="mbiemri" placeholder="Mbiemri" type="text" name="mbiemri"  autocomplete="off" id="mbiemri">
+                </div>
+                <br>
+                <div class="">
+                  <input class="mbiemri" placeholder="Email" type="email" name="email"  autocomplete="off" id="email">
+                </div>
+                <br>
+                <div class="">
+                <input class="mbiemri" placeholder="Fjalekalimi" type="password" name="pass"  autocomplete="off" id="pass">
+                </div>
+                  <br>
+                  <br>
+                  <br>
+        <button  id="btn1" class="btn1" style="border:none;"><i class="fas fa-user-plus" aria-hidden="true"></i><b style="margin-left:10px;">Regjistrohu</b></button>
+               <br>
+            <h6 class="secondary-color regjistrimi"><a href="login.html" style="color:#ff4500; font-size:17px;">Keni nje llogari tashme? Hyni</a></h6>
+               <br><br><br><br><br>
+    </center>
+</form>
+  </div>
+  <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js"></script>
+  <script>
+            $(document).ready(function() {
+            var url = "http://192.168.137.123/N/Equal2/www/regjistrimi.php";  
+          $("#btn1").click(function(){
+            event.preventDefault();
+            event.stopPropagation();  
+                  $.ajax({
+                    type: "POST",crossDomain: true, cache: false,
+                    url: url,
+                    method: "POST",
+                    data: $('#form').serialize(),
+                    success: function (res) {
+                  alert(res);
+                }
+                });
+            });
+          });
+</script>
+
+    <script src="Javascript/all.js"></script>
+    <script src="Javascript/jquery-3.4.1.min.js"></script>
+    <script src="Javascript/bootstrap.bundle.min.js"></script>
+    <script src="Javascript/cordova.js"></script>
+ </body>
+</html>
+

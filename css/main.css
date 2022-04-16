@@ -1,0 +1,171 @@
+html{
+    scroll-behavior: smooth;
+	    margin-top: -8px;
+		margin-bottom:-20px;
+}
+
+body{    
+    overflow-x: hidden;
+}
+
+/* color #0b0711 --- e zeze */
+/* color #ff4500 --- portokalli */
+/* color #171520 --- blu*/
+
+.primary-color{
+    color: #FFFFFF;
+}
+
+.secondary-color{
+    color: #ff4500;
+}
+
+.background{
+    background-color:#0b0711;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+img{  /* Logoja */
+    width:170px;
+    height:110px;
+    margin-right:auto;
+    margin-left:auto;
+}
+
+.emri{
+  font-size: 21px;
+  color: #FFFFFF;
+  height: 40px;
+  display: block;
+  width: 54%;
+  background: transparent;
+  padding-left: 41px;
+}
+
+.password{
+  font-size: 21px;
+  color: #FFFFFF;
+  height: 40px;
+  display: block;
+  width: 54%;
+  background: transparent;
+  padding-left: 41px;
+}
+
+.mbiemri{
+  font-size: 21px;
+  color: #FFFFFF;
+  height: 40px;
+  display: block;
+  width: 70%;
+  background: transparent;
+}
+
+input{
+    border-bottom: 2px solid #ff4500;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+}
+
+.icon{ /* icona e emrit */
+    padding: 0px;
+    color: #ff4500;
+    min-width: 50px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: -202px;
+    margin-bottom:-38px;
+}
+
+.icon1{ /* icona e fjalekalimit*/
+    padding: 0px;
+    color: #ff4500;
+    min-width: 50px;
+    text-align: left;
+    font-size: 25px;
+    margin-left: -202px;
+    margin-bottom: -38px;
+}
+
+.ico i { 
+ position: absolute; 
+ margin-left:40px;
+} 
+
+.ic{
+    margin-left:-52px;
+    font-size:25px;
+}
+
+.btn{
+    color:#0b0711;
+    background-color:#ff4500;
+    width:170px;
+    height:50px;
+    font-size:21px;
+}
+
+.btn1{
+    color:#0b0711;
+    background-color:#ff4500;
+    width:220px;
+    height:50px;
+    font-size:21px;
+    text-decoration:none;
+}
+
+.minnav{
+    background-color:black;
+    width:100%;
+}
+.fjalekalimi{
+    text-decoration:none;
+}
+
+.regjistrimi{
+    text-decoration:none;
+    color:#ff4500
+}
+
+::placeholder { 
+  color: #FFFFFF;
+  opacity: 1; 
+}
+
+.ss{
+  padding: 7px;
+  color: #FFFFFF;
+  min-width: 50px;
+  text-align: left;
+  font-size: 18px;
+  padding-left: 15px;
+}
+
+.navbar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #232026;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navbar .closebtn {
+  position: absolute;
+  top: 0;
+  color:#ff4500;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.navbar a {
+  text-decoration: none;
+  display: block;
+}

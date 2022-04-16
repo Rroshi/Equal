@@ -1,0 +1,23 @@
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-ajaxy/1.6.1/scripts/jquery.ajaxy.min.js"></script>
+    <script>
+              $(document).ready(function() {
+          var url = "http://192.168.137.123/N/Equal2/www/logout.php"; 
+          event.preventDefault();
+                $.ajax({
+                  type: "POST",crossDomain: true, cache: false,
+                  url: url,
+                  method: "POST",
+                  success: function (res) {
+                  alert("Faleminderit per vemendjen tuaj.");
+                    window.location.href = "login.html";
+              }
+              });
+        });
+  </script>
+      <script src="Javascript/all.js"></script>
+      <script src="Javascript/jquery-3.4.1.min.js"></script>
+      <script src="Javascript/bootstrap.bundle.min.js"></script>
+      <script src="Javascript/cordova.js"></script>
+
+  
